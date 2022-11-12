@@ -4,8 +4,6 @@
 
 
 #include "speech_documentation.h"
-#include "/Users/lukewilliams/VSCode_Projects/A.D.A/Modules/file_management/file_management.h"
-#include "/Users/lukewilliams/VSCode_Projects/A.D.A/Modules/time/time.h"
 
 Time timeClass;
 
@@ -92,7 +90,7 @@ bool check_for_archive_file(string date) { // COMPLETED
 
     date = timeClass.get_speech_archive_file_name(date);
 
-    string fPath = "/Users/lukewilliams/VSCode_Projects/A.D.A/STORAGE/speech_archives/" + date + ".txt";
+    string fPath = "/home/pi/Desktop/A.D.A/STORAGE/speech_archives" + date + ".txt";
     ifstream f(fPath);
     return f.good();
 
@@ -112,7 +110,7 @@ void add_to_archive(string userInput, string ADAOutput) { // COMPLETED
 
     date = timeClass.get_speech_archive_file_name(date);
 
-    string fPath = "/Users/lukewilliams/VSCode_Projects/A.D.A/STORAGE/speech_archives/" + date + ".txt";
+    string fPath = "/home/pi/Desktop/A.D.A/STORAGE/speech_archives" + date + ".txt";
 
     add_line_to_file(fPath, output);
 
@@ -142,7 +140,7 @@ void create_archive_file() { // COMPLETED
 
     string date = timeClass.get_speech_archive_file_name(timeClass.get_ctime());
 
-    string fPath = "/Users/lukewilliams/VSCode_Projects/A.D.A/STORAGE/speech_archives/" + date + ".txt";
+    string fPath = "/home/pi/Desktop/A.D.A/STORAGE/speech_archives" + date + ".txt";
 
     ofstream f(fPath);
     f.close();
