@@ -1,0 +1,7 @@
+0 : No Access
+
+1 : Web, Math
+
+2 : Web, Math, Reminders, Schedule, Read Users
+
+3 : full Access

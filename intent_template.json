@@ -1,0 +1,33 @@
+{
+    "tag": "",
+    "type": "",
+    "patterns": [
+        {
+            "pattern_type": "basic_patterns",
+            "sentences": [
+                ""
+            ]
+        },
+        {
+            "pattern_type": "value_patterns",
+            "name_sentences": [
+                ""
+            ],
+            "name": [
+                ""
+            ],
+            "direct objects": [
+                ""
+            ],
+            "values": [
+                ""
+            ]
+        },
+        {
+            "pattern_type": "structure_patterns",
+            "struct_sentences": [
+                ""
+            ]
+        }
+    ]
+}

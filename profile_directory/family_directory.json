@@ -1,0 +1,32 @@
+{
+  "num of families": 1,
+  "families": [
+    {
+      "family name": "williams",
+      "num of members": 4,
+      "members": [
+        {
+          "role": "father",
+          "name": "profile_directory/james_williams"
+        },
+        {
+          "role": "mother",
+          "name": "profile_directory/sara_williams"
+        },
+        {
+          "role": "daughter",
+          "name": "profile_directory/allie_williams"
+        },
+        {
+          "role": "son",
+          "name": "profile_directory/luke_williams"
+        }
+      ]
+    },
+    {
+      "family name": "carroll",
+      "num of members": 0,
+      "members": []
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+    "names": [
+        {
+            "displayName": "Prefix First Name Middle name Last Name Suffic",
+            "familyName": "Last Name",
+            "givenName": "First Name",
+            "middleName": "Middle name",
+            "honorificPrefix": "Prefix",
+            "honorificSuffix": "Suffic",
+            "phoneticFamilyName": "phonetic last",
+            "phoneticGivenName": "Phonetic first",
+            "phoneticMiddleName": "phonetic middle",
+            "displayNameLastFirst": "Last Name, Prefix First Name Middle name, Suffic"
+        }
+    ],
+    "nicknames": [
+        {
+            "value": "nickname"
+        }
+    ],
+    "birthdays": [
+        {
+            "date": {
+                "year": 1111,
+                "month": 11,
+                "day": 11
+            },
+            "text": "11/11/1111"
+        }
+    ],
+    "addresses": [
+        {
+            "formattedValue": "street address\npo box\nstreet address line 2, city, AK ZIP CODE\nUS",
+            "type": "address label",
+            "formattedType": "address label",
+            "poBox": "po box",
+            "streetAddress": "street adress",
+            "extendedAddress": "street address line 2",
+            "city": "city",
+            "region": "AK",
+            "postalCode": "ZIP CODE",
+            "country": "US",
+            "countryCode": "US"
+        }
+    ],
+    "emailAddresses": [
+        {
+            "value": "email",
+            "type": "email label",
+            "formattedType": "email label"
+        }
+    ],
+    "phoneNumbers": [
+        {
+            "value": "Phone Number",
+            "type": "Phone Label",
+            "formattedType": "Phone Label"
+        }
+    ],
+    "biographies": [
+        {
+            "value": "Notes"
+        }
+    ],
+    "urls": [
+        {
+            "value": "website",
+            "type": "website label",
+            "formattedType": "website label"
+        }
+    ],
+    "organizations": [
+        {
+
+            "name": "Company",
+            "department": "department",
+            "title": "Job title"
+        }
+    ],
+    "memberships": [
+        {
+            "contactGroupMembership": {
+                "contactGroupId": "myContacts",
+                "contactGroupResourceName": "contactGroups/myContacts"
+            }
+        }
+    ],
+    "relations": [
+        {
+            "person": "relationship",
+            "type": "relationship label",
+            "formattedType": "relationship label"
+        }
+    ],
+    "userDefined": [
+        {
+            "key": "custom field label",
+            "value": "custom field"
+        }
+    ],
+    "gender": [
+        {
+            "value": "gender"
+        }
+    ]
+}

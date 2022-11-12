@@ -1,0 +1,1166 @@
+{
+    "intents": [
+        {
+            "tag": "hello",
+            "patterns": [
+                {
+                    "sentence": ["Hi"],
+                    "name_sentences": [""],
+                    "type": "statement",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["good evening"],
+                    "name_sentences": [""],
+                    "type": "statement",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["Is anyone there?"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["Hello"],
+                    "name_sentences": [""],
+                    "type": "statement",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["Good day"],
+                    "name_sentences": [""],
+                    "type": "statement",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["good morning"],
+                    "name_sentences": [""],
+                    "type": "statement",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["good afternoon"],
+                    "name_sentences": [""],
+                    "type": "statement",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["whats up"],
+                    "name_sentences": [""],
+                    "type": "statement",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["greetings"],
+                    "name_sentences": [""],
+                    "type": "statement",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["wake up"],
+                    "name_sentences": [""],
+                    "type": "statement",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["hola"],
+                    "name_sentences": [""],
+                    "type": "statement",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "how are you",
+            "patterns": [
+                {
+                    "sentence": ["how are you"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["how are you doing"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["how are you holding up"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["how are things going"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                {
+                    "sentence": ["goodbye"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["bye"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["cya"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["see you later"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["see you tonight"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["see you soon"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["im off"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["im leaving"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["adios"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "ADA name",
+            "patterns": [
+                {
+                    "sentence": ["what is your name"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what do people call you"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["whats your name"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }               
+            ]
+        },
+        {
+            "tag": "ADA purpose",
+            "patterns": [
+                {
+                    "sentence": ["what is your purpose"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what were you built for"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what is your intended purpose"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["why are you here"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["why were you built"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what were you made for"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["why were you made"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "ADA age",
+            "patterns": [
+                {
+                    "sentence": ["how old are you"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["how long ago were you created"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["how long have you been serving"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["how long have you been active"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "ADA birthday",
+            "patterns": [
+                {
+                    "sentence": ["when were you made"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["when is your birthday"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["when were you created"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what day were you created"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what day were you activated"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }  
+            ]
+        },
+        {
+            "tag": "ADA home",
+            "patterns": [
+                {
+                    "sentence": ["where are you from"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["where do you live"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["where is your home"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["where is your house"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["where were you born"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["where were you created"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }     
+            ]
+        },
+        {
+            "tag": "ADA freetime",
+            "patterns": [
+                {
+                    "sentence": ["what do you enjoy doing"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what do you do in your freetime"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["how do you spend your freetime"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }   
+            ]
+        },
+        {
+            "tag": "new profile",
+            "patterns": [
+                {
+                    "sentence": ["create a new profile for"],
+                    "name_sentences": ["create a new profile for luke williams", "create a new profile for allie grace williams", "create a new profile for james please", "create a new profile for sara medley please and thank you"],
+                    "type": "command",
+                    "name": ["luke williams", "allie grace williams", "james", "sara medley"],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["make a new profile for"],
+                    "name_sentences": ["make a new profile for luke williams", "make a new profile for allie grace williams", "make a new profile for james please", "make a new profile for sara medley please and thank you"],
+                    "type": "command",
+                    "name": ["luke williams", "allie grace williams", "james", "sara medley"],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["create a new profile with the name"],
+                    "name_sentences": ["create a new profile with the name luke williams", "create a new profile with the name allie grace williams", "create a new profile with the name james please", "create a new profile with the name sara medley please and thank you"],
+                    "type": "command",
+                    "name": ["luke williams", "allie grace williams", "james", "sara medley"],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["make a new profile with the name"],
+                    "name_sentences": ["make a new profile with the name luke williams", "make a new profile with the name allie grace williams", "make a new profile with the name james please", "make a new profile with the name sara medley please and thank you"],
+                    "type": "command",
+                    "name": ["luke williams", "allie grace williams", "james", "sara medley"],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "delete profile",
+            "patterns": [
+                {
+                    "sentence": ["remove profile for"],
+                    "name_sentences": ["remove profile for luke williams", "remove profile for allie grace williams", "remove profile for james please", "remove profile for sara medley please and thank you"],
+                    "type": "command",
+                    "name": ["luke williams", "allie grace williams", "james", "sara medley"],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["delete profile for"],
+                    "name_sentences": ["delete profile for luke williams", "delete profile for allie grace williams", "delete profile for james please", "delete profile for sara medley please and thank you"],
+                    "type": "command",
+                    "name": ["luke williams", "allie grace williams", "james", "sara medley"],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["remove profile with the name"],
+                    "name_sentences": ["remove profile with the name luke williams", "remove profile with the name allie grace williams", "remove profile with the name james please", "remove profile with the name sara medley please and thank you"],
+                    "type": "command",
+                    "name": ["luke williams", "allie grace williams", "james", "sara medley"],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["delete profile with the name"],
+                    "name_sentences": ["delete profile with the name luke williams", "delete profile with the name allie grace williams", "delete profile with the name james please", "delete profile with the name sara medley please and thank you"],
+                    "type": "command",
+                    "name": ["luke williams", "allie grace williams", "james", "sara medley"],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "change profile name",
+            "patterns": [
+                {
+                    "sentence": ["change profile name for to"],
+                    "name_sentences": ["change profile name for luke williams to allie williams", "change profile name for sara medley to james fridberg"],
+                    "type": "command",
+                    "name": ["luke williams", "sara medley"],
+                    "direct object": ["allie williams", "james fridberg"],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "add attribute",
+            "patterns": [
+                {
+                    "sentence": ["add attribute", "add attribute for", "add attribute under the name", "add attribute to"],
+                    "name_sentences": ["add attribute job", "add attribute nickname"],
+                    "type": "command",
+                    "name": ["", ""],
+                    "direct object": ["job", "nickname"],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["add attribute for"],
+                    "name_sentences": ["add attribute age for luke williams", "add attribute middle name for sara medley"],
+                    "type": "command",
+                    "name": ["luke williams", "sara medley"],
+                    "direct object": ["age", "middle name"],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["add attribute under the name"],
+                    "name_sentences": ["add attribute job under the name sara medley", "add attribute phone number under the name james kenan williams"],
+                    "type": "command",
+                    "name": ["sara medley", "james kenan williams"],
+                    "direct object": ["job", "phone number"],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["add attribute to"],
+                    "name_sentences": ["add attribute gender to james kenan williams", "add attribute phone number to sara williams"],
+                    "type": "command",
+                    "name": ["james kenan williams", "sara williams"],
+                    "direct object": ["gender", "phone number"],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "delete attribute",
+            "patterns": [
+                {
+                    "sentence": ["delete attribute", "delete attribute for", "delete attribute under the name", "delete attribute to"],
+                    "name_sentences": ["delete attribute job", "delete attribute nickname"],
+                    "type": "command",
+                    "name": ["", ""],
+                    "direct object": ["job", "nickname"],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["delete attribute for"],
+                    "name_sentences": ["delete attribute age for luke williams", "delete attribute middle name for sara medley"],
+                    "type": "command",
+                    "name": ["luke williams", "sara medley"],
+                    "direct object": ["age", "middle name"],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["delete attribute under the name"],
+                    "name_sentences": ["delete attribute job under the name sara medley", "delete attribute phone number under the name james kenan williams"],
+                    "type": "command",
+                    "name": ["sara medley", "james kenan williams"],
+                    "direct object": ["job", "phone number"],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["remove attribute", "remove attribute for", "remove attribute under the name", "remove attribute to"],
+                    "name_sentences": ["remove attribute job", "remove attribute nickname"],
+                    "type": "command",
+                    "name": ["", ""],
+                    "direct object": ["job", "nickname"],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["remove attribute for"],
+                    "name_sentences": ["remove attribute age for luke williams", "remove attribute middle name for sara medley"],
+                    "type": "command",
+                    "name": ["luke williams", "sara medley"],
+                    "direct object": ["age", "middle name"],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["remove attribute under the name"],
+                    "name_sentences": ["remove attribute job under the name sara medley", "remove attribute phone number under the name james kenan williams"],
+                    "type": "command",
+                    "name": ["sara medley", "james kenan williams"],
+                    "direct object": ["job", "phone number"],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "change attribute",
+            "patterns": [
+                {
+                    "sentence": ["change attribute"],
+                    "name_sentences": ["change attribute age", "change attribute gender"],
+                    "type": "command",
+                    "name": ["", ""],
+                    "direct object": ["age", "gender"],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["change attribute for"],
+                    "name_sentences": ["change attribute phone number for sara medley", "change attribute job for james kenan williams"],
+                    "type": "command",
+                    "name": ["sara medley", "james kenan williams"],
+                    "direct object": ["phone number", "job", ""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["change attribute under the name"],
+                    "name_sentences": ["change attribute phone number under the name sara medley", "change attribute job under the name james kenan williams"],
+                    "type": "command",
+                    "name": ["sara medley", "james kenan williams"],
+                    "direct object": ["phone number", "job"],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "get attribute",
+            "patterns": [
+                {
+                    "sentence": ["get attribute"],
+                    "name_sentences": ["get attribute age", "get attribute phone number"],
+                    "type": "command",
+                    "name": ["", ""],
+                    "direct object": ["age", "phone number"],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["get attribute for"],
+                    "name_sentences": ["get attribute age for luke medley", "get attribute phone number for james kenan williams"],
+                    "type": "command",
+                    "name": ["luke medley", "james kenan williams"],
+                    "direct object": ["age", "phone number"],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "get profile count",
+            "patterns": [
+                {
+                    "sentence": ["get count of profiles"],
+                    "name_sentences": [""],
+                    "type": "command",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["get profile count"],
+                    "name_sentences": [""],
+                    "type": "command",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["get number of profiles"],
+                    "name_sentences": [""],
+                    "type": "command",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["how many profiles are there"],
+                    "name_sentences": [""],
+                    "type": "command",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["how many profile profiles are stored"],
+                    "name_sentences": [""],
+                    "type": "command",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }                
+            ]
+        },
+        {
+            "tag": "check profile",
+            "patterns": [
+                {
+                    "sentence": ["is there a profile under the name"],
+                    "name_sentences": ["is there a profile under the name luke williams", "is there a profile under the name james kenan fridberg"],
+                    "type": "command",
+                    "name": ["luke williams", "james kenan fridberg"],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["is a profile"],
+                    "name_sentences": ["is luke williams a profile", "is sara medley a profile"],
+                    "type": "command",
+                    "name": ["luke williams", "sara medley"],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["does have a profile"],
+                    "name_sentences": ["does luke williams have a profile", "does sara medley have a profile"],
+                    "type": "command",
+                    "name": ["luke williams", "sara medley"],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "gender",
+            "patterns": [
+                {
+                    "sentence": ["what is your gender"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["are you a boy or girl"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["are you a boy"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["are you a girl"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what do you indentify as"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "favorite color",
+            "patterns": [
+                {
+                    "sentence": ["what is your favorite color"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what color is your favorite"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["do you have a favorite color"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "do you understand",
+            "patterns": [
+                {
+                    "sentence": ["do you understand me"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["do you understand what i am saying"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["do you understand"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "more skills",
+            "patterns": [
+                {
+                    "sentence": ["you need more skills"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["you need to be better"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["you need to do more"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "do you like me",
+            "patterns": [
+                {
+                    "sentence": ["do you like me"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["do you love me"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["are you my friend"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "you suck",
+            "patterns": [
+                {
+                    "sentence": ["you suck"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["you are the worst"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["you are horrible"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["i hate you"],
+                    "name_sentences": [""],
+                    "type": "ada",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "time",
+            "patterns": [
+                {
+                    "sentence": ["what time is it"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what is the time"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["could you tell me what time it is"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "boot",
+            "patterns": [
+                {
+                    "sentence": ["boot"],
+                    "name_sentences": [""],
+                    "type": "command",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "day of week",
+            "patterns": [
+                {
+                    "sentence": ["what day of the week is it"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what is the day of the week"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "month",
+            "patterns": [
+                {
+                    "sentence": ["what is the month"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what month is it"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what month am i in"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "day number",
+            "patterns": [
+                {
+                    "sentence": ["what is the day number"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "hour",
+            "patterns": [
+                {
+                    "sentence": ["what hour is it"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what is the hour"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "minute",
+            "patterns": [
+                {
+                    "sentence": ["what minute is it"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what is the minute"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "second",
+            "patterns": [
+                {
+                    "sentence": ["what second is it"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "year",
+            "patterns": [
+                {
+                    "sentence": ["what year is it"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what is the year"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        },
+        {
+            "tag": "day",
+            "patterns": [
+                {
+                    "sentence": ["what day is it"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                },
+                {
+                    "sentence": ["what is the day"],
+                    "name_sentences": [""],
+                    "type": "question",
+                    "name": [""],
+                    "direct object": [""],
+                    "value": [""]
+                }
+            ]
+        }
+    ]
+}
