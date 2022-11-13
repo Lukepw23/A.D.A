@@ -413,7 +413,7 @@ int get_response(int number) {// IN PROGRESS
 
 
 int main() { // COMPLETED
-    system("/usr/local/bin/python3 /Users/lukewilliams/VSCode_Projects/A.D.A/main.py");
+    system("/usr/bin/python3 /home/pi/Desktop/A.D.A/main.py");
 }
 
 

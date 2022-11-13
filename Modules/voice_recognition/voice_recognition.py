@@ -6,13 +6,16 @@
 import json
 import os
 import pickle
-from ctypes import cdll
+import ctypes
 import nltk
 import numpy
 import tflearn
 from Modules.voice_recognition.speech_detection import recognize_speech_from_mic, text_to_speech
 from nltk.stem.lancaster import LancasterStemmer
 import time
+import glob
+
+nltk.download('punkt')
 
 stemmer = LancasterStemmer()
 
@@ -21,14 +24,10 @@ stemmer = LancasterStemmer()
 #                            C++ Function Importing                            #
 # ---------------------------------------------------------------------------- #
 
+mylib = ctypes.cdll.LoadLibrary("o_files/mainLib.so")
 
-lib = cdll.LoadLibrary('./o_files/mainLib.so')
-
-def get_response(number): # COMPLETED
-    
-    a = lib.get_response_so(number)
-    return a
-
+def get_response(num):
+    return mylib.get_response_so(num)
 
 # ---------------------------------------------------------------------------- #
 #                            TFLearn Model Functions                           #

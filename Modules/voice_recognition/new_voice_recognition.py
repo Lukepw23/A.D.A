@@ -48,7 +48,7 @@ def write_to_not_understood(line): # COMPLETED
 
 def train_basic_model():
 
-    with open("../../new_intents.json") as f:
+    with open("new_intents.json") as f:
         intentsFile = json.load(f)
     
     for intent in intentsFile["intents"]:
@@ -62,7 +62,7 @@ class ADA:
 
     def __init__(self, newModel = False):
 
-        # (self.model, self.words, self.tagList) = train_and_save_model(newModel)
+        (self.model, self.words, self.tagList) = train_basic_model(newModel)
         pass
 
     def bag_of_words(self, s): # COMPLETED

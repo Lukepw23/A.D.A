@@ -4,7 +4,7 @@
 
 
 from tkinter.tix import InputOnly
-from Modules.voice_recognition.voice_recognition import ADA
+from Modules.voice_recognition.new_voice_recognition import ADA
 from Modules.voice_recognition.speech_detection import recognize_speech_from_mic
 
 
