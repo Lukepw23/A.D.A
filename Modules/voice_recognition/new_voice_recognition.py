@@ -48,11 +48,19 @@ def write_to_not_understood(line): # COMPLETED
 
 def train_basic_model():
 
+    allWords = []
+
     with open("new_intents.json") as f:
         intentsFile = json.load(f)
     
     for intent in intentsFile["intents"]:
-        print(intent["tag"])
+        for pattern in intent["patterns"]:
+            for sentence in pattern["sentences"]:
+                sWords = nltk.word_tokenize(sentence)
+                allWords.extend(sWords)
+    
+    allWords = [stemmer.stem(w.lower()) for w in allWords if w != "?"]
+    allWords = sorted(list(set(allWords)))
 
 train_basic_model()
 
