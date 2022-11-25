@@ -4,11 +4,13 @@ import pickle
 from ctypes import cdll
 import nltk
 import numpy
+from tensorflow.python.util import deprecation
+deprecation._PRINT_DEPRECATION_WARNINGS = False
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import tflearn
-from Modules.voice_recognition.speech_detection import recognize_speech_from_mic, text_to_speech
+# from Modules.voice_recognition.speech_detection import recognize_speech_from_mic, text_to_speech
 from nltk.stem.lancaster import LancasterStemmer
 import time
-
 stemmer = LancasterStemmer()
 
 # ---------------------------------------------------------------------------- #
@@ -44,23 +46,91 @@ def write_to_not_understood(line): # COMPLETED
     f = open("STORAGE/not_understood.txt", "w")
     f.write(line + "\n")
 
+def input_to_training_input(sentence, allWords):
+
+    bag = []
+    for _ in allWords:
+        bag.append(0)
+
+    sWords = nltk.word_tokenize(sentence)
+    for sWord in sWords:
+        for x, aWord in enumerate(allWords):
+            if stemmer.stem(sWord.lower()) == aWord:
+                bag[x] = 1
+    
+    return bag
+    
+
 # ---------------------------------------------------------------------------- #
 
 def train_basic_model():
 
     allWords = []
+    allTags = []
+
+    emptyTrainingWords = []
+    emptyTrainingTags = []
+
+    trainingSentences = []
+    trainingTags = []
 
     with open("new_intents.json") as f:
         intentsFile = json.load(f)
     
     for intent in intentsFile["intents"]:
-        for pattern in intent["patterns"]:
-            for sentence in pattern["sentences"]:
-                sWords = nltk.word_tokenize(sentence)
-                allWords.extend(sWords)
+        allTags.append(intent["tag"])
+        for sentence in intent["patterns"][0]["sentences"]:
+            sWords = nltk.word_tokenize(sentence)
+            allWords.extend(sWords)
     
     allWords = [stemmer.stem(w.lower()) for w in allWords if w != "?"]
     allWords = sorted(list(set(allWords)))
+
+    allTags = sorted(allTags)
+
+    for _ in allWords:
+        emptyTrainingWords.append(0)
+    for _ in allTags:
+        emptyTrainingTags.append(0)
+    
+    for intent in intentsFile["intents"]:
+        
+        for sentence in intent["patterns"][0]["sentences"]:
+            sentenceBag = emptyTrainingWords[:]
+            intentBag = emptyTrainingTags[:]
+            for x, tag in enumerate(allTags):
+                if intent["tag"] == tag:
+                    intentBag[x] = 1
+
+            sWords = nltk.word_tokenize(sentence)
+            for sWord in sWords:
+                for x, aWord in enumerate(allWords):
+                    if stemmer.stem(sWord.lower()) == aWord:
+                        sentenceBag[x] = 1
+            
+            trainingSentences.append(sentenceBag)
+            trainingTags.append(intentBag)
+    
+    trainingInput = numpy.array(trainingSentences)
+    trainingOutput = numpy.array(trainingTags)
+
+    NeuralNetwork = tflearn.input_data(shape=[None, len(trainingInput[0])])
+    NeuralNetwork = tflearn.fully_connected(NeuralNetwork, 8)
+    NeuralNetwork = tflearn.fully_connected(NeuralNetwork, 8)
+    NeuralNetwork = tflearn.fully_connected(NeuralNetwork, len(trainingOutput[0]), activation="softmax")
+    NeuralNetwork = tflearn.regression(NeuralNetwork)
+    
+    adaNN = tflearn.DNN(NeuralNetwork)
+
+    # pickle.dump((trainingInput, trainingOutput, allWords, allTags), open("STORAGE/pickle_files/TOWL.p", "wb")) # stores all the data for future usage
+
+    adaNN.fit(trainingInput, trainingOutput, n_epoch=1, batch_size=8, show_metric=True) # giving model input and proposed output and starting the training
+
+    # adaNN.save("STORAGE/tflearn_model/model.tfl")
+
+    # return (adaNN, allWords, allTags)
+                
+
 
 train_basic_model()
 
