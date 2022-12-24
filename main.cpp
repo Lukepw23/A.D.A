@@ -413,7 +413,7 @@ int get_response(int number) {// IN PROGRESS
 
 
 int main() { // COMPLETED
-    system("/usr/bin/python3 /home/pi/Desktop/A.D.A/main.py");
+    system("/usr/bin/python3 /home/pi/Desktop/A.V.A/main.py");
 }
 
 

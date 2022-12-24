@@ -13,6 +13,8 @@ from nltk.stem.lancaster import LancasterStemmer
 import time
 stemmer = LancasterStemmer()
 
+from speech_detection import *
+
 # ---------------------------------------------------------------------------- #
 
 lib = cdll.LoadLibrary('./o_files/mainLib.so')
