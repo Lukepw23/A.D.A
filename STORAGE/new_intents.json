@@ -1,8 +1,8 @@
 {
     "intents": [
         {
-            "tag": "ADA hello",
-            "type": "ada",
+            "tag": "AVA hello",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -43,8 +43,8 @@
             ]
         },
         {
-            "tag": "ADA how are you",
-            "type": "ada",
+            "tag": "AVA how are you",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -79,8 +79,8 @@
             ]
         },
         {
-            "tag": "ADA goodbye",
-            "type": "ada",
+            "tag": "AVA goodbye",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -119,8 +119,8 @@
             ]
         },
         {
-            "tag": "ADA name",
-            "type": "ada",
+            "tag": "AVA name",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -154,8 +154,8 @@
             ]
         },
         {
-            "tag": "ADA purpose",
-            "type": "ada",
+            "tag": "AVA purpose",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -193,8 +193,8 @@
             ]
         },
         {
-            "tag": "ADA age",
-            "type": "ada",
+            "tag": "AVA age",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -229,8 +229,8 @@
             ]
         },
         {
-            "tag": "ADA birthday",
-            "type": "ada",
+            "tag": "AVA birthday",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -266,8 +266,8 @@
             ]
         },
         {
-            "tag": "ADA home",
-            "type": "ada",
+            "tag": "AVA home",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -304,8 +304,8 @@
             ]
         },
         {
-            "tag": "ADA freetime",
-            "type": "ada",
+            "tag": "AVA freetime",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -904,8 +904,8 @@
             ]
         },
         {
-            "tag": "ADA gender",
-            "type": "ada",
+            "tag": "AVA gender",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -942,8 +942,8 @@
             ]
         },
         {
-            "tag": "ADA favorite color",
-            "type": "ada",
+            "tag": "AVA favorite color",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -977,8 +977,8 @@
             ]
         },
         {
-            "tag": "ADA do you understand",
-            "type": "ada",
+            "tag": "AVA do you understand",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -1012,8 +1012,8 @@
             ]
         },
         {
-            "tag": "ADA more skills",
-            "type": "ada",
+            "tag": "AVA more skills",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -1047,8 +1047,8 @@
             ]
         },
         {
-            "tag": "ADA do you like me",
-            "type": "ada",
+            "tag": "AVA do you like me",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",
@@ -1082,8 +1082,8 @@
             ]
         },
         {
-            "tag": "ADA you suck",
-            "type": "ada",
+            "tag": "AVA you suck",
+            "type": "ava",
             "patterns": [
                 {
                     "pattern_type": "basic_patterns",

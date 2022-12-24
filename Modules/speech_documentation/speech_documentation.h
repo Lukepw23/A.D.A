@@ -22,7 +22,7 @@ bool check_for_archive_file(string date); // COMPLETED
 
 /* --------------------------- Adding to Archives --------------------------- */
 
-void add_to_archive(string userInput, string ADAOutput); // COMPLETED
+void add_to_archive(string userInput, string AVAOutput); // COMPLETED
 
 /* -------------------------- Getting from Archives ------------------------- */
 

@@ -4,7 +4,7 @@
 
 
 from tkinter.tix import InputOnly
-from Modules.voice_recognition.new_voice_recognition import ADA
+from Modules.voice_recognition.new_voice_recognition import AVA
 from Modules.voice_recognition.speech_detection import recognize_speech_from_mic
 
 
@@ -15,14 +15,14 @@ from Modules.voice_recognition.speech_detection import recognize_speech_from_mic
 
 def main_loop():
 
-    train = input("Train Ada? (y/n) : ")
+    train = input("Train Ava? (y/n) : ")
 
     if (train == "y"):
         train = True
     else:
         train = False
 
-    ada = ADA(train)
+    ava = AVA(train)
     shutdown = False
     isBooted = False
 
@@ -30,7 +30,7 @@ def main_loop():
 
         inp = recognize_speech_from_mic()
 
-        out = ada.get_predicted_response(inp)
+        out = ava.get_predicted_response(inp)
         print(inp)
         if (out == "shutdown") or (out == "shut down"):
             print("shutting down")
@@ -40,7 +40,7 @@ def main_loop():
 
             if not isBooted:
 
-                bootOut = ada.boot()
+                bootOut = ava.boot()
                 if (bootOut == "shutdown"):
                     shutdown = True
                 elif (bootOut == "True"):
@@ -48,20 +48,20 @@ def main_loop():
             
             else:
 
-                print("\n" + "ADA : " + "Already booted" + "\n")
-                ada.tts_output("Already booted")
+                print("\n" + "AVA : " + "Already booted" + "\n")
+                ava.tts_output("Already booted")
 
         elif (out != ""):
 
             if isBooted:
 
-                print("\n" + "ADA : " + out + "\n")
-                ada.tts_output(out)
+                print("\n" + "AVA : " + out + "\n")
+                ava.tts_output(out)
 
             else:
 
-                print("\n" + "ADA : " + "please boot" + "\n")
-                ada.tts_output("please boot")
+                print("\n" + "AVA : " + "please boot" + "\n")
+                ava.tts_output("please boot")
 
         
 

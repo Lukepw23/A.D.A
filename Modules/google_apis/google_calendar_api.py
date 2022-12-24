@@ -22,8 +22,8 @@ def init_calender():
         refresh_access_token()
 
         creds = None
-        if os.path.exists('calendar_token.json'):
-            creds = Credentials.from_authorized_user_file('calendar_token.json', SCOPES)
+        if os.path.exists('STORAGE\Tokens\calendar_token.json'):
+            creds = Credentials.from_authorized_user_file('STORAGE\Tokens\calendar_token.json', SCOPES)
         if not creds or not creds.valid:
             if creds and creds.expired and creds.refresh_token:
                 creds.refresh(Request())
@@ -31,14 +31,14 @@ def init_calender():
                 flow = InstalledAppFlow.from_client_secrets_file('STORAGE\google_cred_files\calendar_creds.json', SCOPES)
                 creds = flow.run_local_server(port=0)
 
-            with open('calendar_token.json', 'w') as token:
+            with open('STORAGE\Tokens\calendar_token.json', 'w') as token:
                 token.write(creds.to_json())
     
     except:
 
         creds = None
-        if os.path.exists('calendar_token.json'):
-            os.remove('calendar_token.json')
+        if os.path.exists('STORAGE\Tokens\calendar_token.json'):
+            os.remove('STORAGE\Tokens\calendar_token.json')
         if not creds or not creds.valid:
             if creds and creds.expired and creds.refresh_token:
                 creds.refresh(Request())
@@ -46,7 +46,7 @@ def init_calender():
                 flow = InstalledAppFlow.from_client_secrets_file('STORAGE\google_cred_files\calendar_creds.json', SCOPES)
                 creds = flow.run_local_server(port=0)
 
-            with open('calendar_token.json', 'w') as token:
+            with open('STORAGE\Tokens\calendar_token.json', 'w') as token:
                 token.write(creds.to_json())
     
     service = build('calendar', 'v3', credentials=creds)
@@ -759,7 +759,7 @@ def clear_calendar(summary):
 
 def refresh_access_token():
 
-    with open("calendar_token.json", 'r') as f:
+    with open("STORAGE\Tokens\calendar_token.json", 'r') as f:
         data = json.load(f)
         refresh_token = data["refresh_token"]
 
@@ -770,12 +770,12 @@ def refresh_access_token():
 
     a = resp.json()
 
-    with open("calendar_token.json", 'r') as f:
+    with open("STORAGE\Tokens\calendar_token.json", 'r') as f:
         data = json.load(f)
         data['token'] = a["access_token"]
     
-    os.remove("calendar_token.json")
-    with open("calendar_token.json", 'w') as f:
+    os.remove("STORAGE\Tokens\calendar_token.json")
+    with open("STORAGE\Tokens\calendar_token.json", 'w') as f:
         json.dump(data, f, indent=4)
 
 a = init_calender()

@@ -60,7 +60,7 @@ def cpp_recognize_speech_from_mic(number, question): # COMPLETED
 
     while not haveOutput:
 
-        print("\n" + "ADA : " + question + "\n")
+        print("\n" + "AVA : " + question + "\n")
         text_to_speech(question)
 
         with sr.Microphone(device_index=0) as source:
@@ -75,9 +75,9 @@ def cpp_recognize_speech_from_mic(number, question): # COMPLETED
             create_speech_output_file(number,output)
             haveOutput = True
         except sr.RequestError:
-            print("\n" + "ADA : " + "did not understand" + "\n")
+            print("\n" + "AVA : " + "did not understand" + "\n")
             text_to_speech("did not understand")
         except sr.UnknownValueError:
-            print("\n" + "ADA : " + "did not understand" + "\n")
+            print("\n" + "AVA : " + "did not understand" + "\n")
             text_to_speech("did not understand")  
 

@@ -126,7 +126,7 @@ string get_from_response_file(string tag) { // COMPLETED
         }
     }
 
-    string fName = "responses/" + newTag + ".txt";
+    string fName = "STORAGE/responses/" + newTag + ".txt";
 
     vector<string> responses = read_from_file(fName);
 
@@ -199,12 +199,12 @@ int get_response(int number) {// IN PROGRESS
 
     Time time;
 
-    if (tag == "ADA age"){ // COMPLETED
+    if (tag == "AVA age"){ // COMPLETED
         output = get_from_response_file(tag);
         edit_output_file(number, output);
     }
 
-    else if (tag == "ADA freetime") { // COMPLETED
+    else if (tag == "AVA freetime") { // COMPLETED
         output = get_from_response_file(tag);
         edit_output_file(number, output);
     }
@@ -249,7 +249,7 @@ int get_response(int number) {// IN PROGRESS
         edit_output_file(number, output);
     }
 
-    else if (tag == "ADA purpose") { // COMPLETED
+    else if (tag == "AVA purpose") { // COMPLETED
         output = get_from_response_file(tag);
         edit_output_file(number, output);
     }
@@ -281,12 +281,12 @@ int get_response(int number) {// IN PROGRESS
         edit_output_file(number, output);
     }
 
-    else if (tag == "ADA birthday") { // COMPLETED 
+    else if (tag == "AVA birthday") { // COMPLETED 
         output = get_from_response_file(tag);
         edit_output_file(number, output);
     }
 
-    else if (tag == "ADA home") { // COMPLETED 
+    else if (tag == "AVA home") { // COMPLETED 
         output = get_from_response_file(tag);
         edit_output_file(number, output);
     }
@@ -299,7 +299,7 @@ int get_response(int number) {// IN PROGRESS
         edit_output_file(number, output);
     }
 
-    else if (tag == "ADA name") { // COMPLETED
+    else if (tag == "AVA name") { // COMPLETED
         output = get_from_response_file(tag);
         edit_output_file(number, output);
     }

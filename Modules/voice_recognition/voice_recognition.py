@@ -93,15 +93,15 @@ def train_and_save_model(train): # COMPLETED
         NeuralNetwork = tflearn.fully_connected(NeuralNetwork, len(expectedOutput[0]), activation="softmax") # adding an output layer with a node for every tag
         NeuralNetwork = tflearn.regression(NeuralNetwork) # optimizes I/O layers
         
-        adaNN = tflearn.DNN(NeuralNetwork) # setting type of Neural Network
+        avaNN = tflearn.DNN(NeuralNetwork) # setting type of Neural Network
 
         pickle.dump((trainingInput, expectedOutput, allWords, tagList), open("STORAGE/pickle_files/TOWL.p", "wb")) # stores all the data for future usage
 
-        adaNN.fit(trainingInput, expectedOutput, n_epoch=1000, batch_size=8, show_metric=True) # giving model input and proposed output and starting the training
+        avaNN.fit(trainingInput, expectedOutput, n_epoch=1000, batch_size=8, show_metric=True) # giving model input and proposed output and starting the training
 
-        adaNN.save("STORAGE/tflearn_model/model.tfl") # saves the model for future use
+        avaNN.save("STORAGE/tflearn_model/model.tfl") # saves the model for future use
 
-        return (adaNN, allWords, tagList) # returns the model to make predictions and other lists for use elsewhere
+        return (avaNN, allWords, tagList) # returns the model to make predictions and other lists for use elsewhere
 
     else:
 
@@ -113,11 +113,11 @@ def train_and_save_model(train): # COMPLETED
         net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
         net = tflearn.regression(net)
 
-        adaNN = tflearn.DNN(net)
+        avaNN = tflearn.DNN(net)
 
-        adaNN.load("STORAGE/tflearn_model/model.tfl")
+        avaNN.load("STORAGE/tflearn_model/model.tfl")
 
-        return (adaNN, allWords, tagList)
+        return (avaNN, allWords, tagList)
     
 
 # ---------------------------------------------------------------------------- #
@@ -164,11 +164,11 @@ def write_to_not_understood(line): # COMPLETED
 
 
 # ---------------------------------------------------------------------------- #
-#                                   ADA Class                                  #
+#                                   AVA Class                                  #
 # ---------------------------------------------------------------------------- #
 
 
-class ADA:
+class AVA:
 
     def __init__(self, newModel = False):
 
@@ -190,28 +190,28 @@ class ADA:
             print("Done Proccessing")
             return "shutdown"
 
-        if ("ada" in inpLower) or ("aida" in inpLower):
+        if ("ava" in inpLower) or ("aida" in inpLower):
 
-            inpWithoutAda = ""
+            inpWithoutAva = ""
 
             inpWords = nltk.word_tokenize(inpLower)
 
             for i, word in enumerate(inpWords):
-                if (word != "ada") and (word != "aida"):
-                    inpWithoutAda += word
+                if (word != "ava") and (word != "aida"):
+                    inpWithoutAva += word
 
-                    inpWithoutAda += " " if i != (len(inpWords)-1) else ""
+                    inpWithoutAva += " " if i != (len(inpWords)-1) else ""
             
-            if inpWithoutAda[len(inpWithoutAda)-1] == " ":
-                inpWithoutAda = inpWithoutAda[:-1]
+            if inpWithoutAva[len(inpWithoutAva)-1] == " ":
+                inpWithoutAva = inpWithoutAva[:-1]
 
-            results = self.model.predict([bag_of_words(inpWithoutAda, self.words)])[0]
+            results = self.model.predict([bag_of_words(inpWithoutAva, self.words)])[0]
             results_index = numpy.argmax(results)
 
             if results[results_index] > 0.875:
 
                 #print("Done Proccessing")
-                return cpp_call(1, self.tagList[results_index], inpWithoutAda)
+                return cpp_call(1, self.tagList[results_index], inpWithoutAva)
                     
             else:
 
@@ -232,13 +232,13 @@ class ADA:
 
         while True:
 
-            print("\n" + "ADA : " + "Access code" + "\n")
+            print("\n" + "AVA : " + "Access code" + "\n")
             self.tts_output("Access code")
 
             code = recognize_speech_from_mic()
 
             if (code == "2163" or code == "to 163" or code == "too 163"):
-                print("\n" + "ADA : " + "Access granted" + "\n")
+                print("\n" + "AVA : " + "Access granted" + "\n")
                 self.tts_output("Access granted")
                 return "True"
             
@@ -246,6 +246,6 @@ class ADA:
                 return "shutdown"
 
             else:
-                print("\n" + "ADA : " + "invalid code" + "\n")
+                print("\n" + "AVA : " + "invalid code" + "\n")
                 self.tts_output("invalid code")
         

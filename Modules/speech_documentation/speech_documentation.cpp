@@ -98,11 +98,11 @@ bool check_for_archive_file(string date) { // COMPLETED
 
 /* --------------------------- Adding to Archives --------------------------- */
 
-void add_to_archive(string userInput, string ADAOutput) { // COMPLETED
+void add_to_archive(string userInput, string AVAOutput) { // COMPLETED
 
     string date = timeClass.get_ctime();
 
-    string output = date + ":" + userInput + ":" + ADAOutput;
+    string output = date + ":" + userInput + ":" + AVAOutput;
 
     if (!check_for_archive_file(date)) {
         create_archive_file();

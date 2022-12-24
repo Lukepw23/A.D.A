@@ -23,8 +23,8 @@ def init_people():
         refresh_access_token()
         
         creds = None
-        if os.path.exists('people_token.json'):
-            creds = Credentials.from_authorized_user_file('people_token.json', SCOPES)
+        if os.path.exists('STORAGE\Tokens\people_token.json'):
+            creds = Credentials.from_authorized_user_file('STORAGE\Tokens\people_token.json', SCOPES)
         if not creds or not creds.valid:
             if creds and creds.expired and creds.refresh_token:
                 creds.refresh(Request())
@@ -32,14 +32,14 @@ def init_people():
                 flow = InstalledAppFlow.from_client_secrets_file('STORAGE\google_cred_files\people_creds.json', SCOPES)
                 creds = flow.run_local_server(port=0)
 
-            with open('people_token.json', 'w') as token:
+            with open('STORAGE\Tokens\people_token.json', 'w') as token:
                 token.write(creds.to_json())
     
     except:
 
         creds = None
-        if os.path.exists('people_token.json'):
-            os.remove('people_token.json')
+        if os.path.exists('STORAGE\Tokens\people_token.json'):
+            os.remove('STORAGE\Tokens\people_token.json')
         if not creds or not creds.valid:
             if creds and creds.expired and creds.refresh_token:
                 creds.refresh(Request())
@@ -47,7 +47,7 @@ def init_people():
                 flow = InstalledAppFlow.from_client_secrets_file('STORAGE\google_cred_files\people_creds.json', SCOPES)
                 creds = flow.run_local_server(port=0)
 
-            with open('people_token.json', 'w') as token:
+            with open('STORAGE\Tokens\people_token.json', 'w') as token:
                 token.write(creds.to_json())
     
     service = build('people', 'v1', credentials=creds)
@@ -56,7 +56,7 @@ def init_people():
 
 def refresh_access_token():
 
-    with open("people_token.json", 'r') as f:
+    with open("STORAGE\Tokens\people_token.json", 'r') as f:
         data = json.load(f)
         refresh_token = data["refresh_token"]
 
@@ -67,12 +67,12 @@ def refresh_access_token():
 
     a = resp.json()
 
-    with open("people_token.json", 'r') as f:
+    with open("STORAGE\Tokens\people_token.json", 'r') as f:
         data = json.load(f)
         data['token'] = a["access_token"]
     
-    os.remove("people_token.json")
-    with open("people_token.json", 'w') as f:
+    os.remove("STORAGE\Tokens\people_token.json")
+    with open("STORAGE\Tokens\people_token.json", 'w') as f:
         json.dump(data, f, indent=4)
 
 def create_contact():

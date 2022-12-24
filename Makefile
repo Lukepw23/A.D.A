@@ -1,5 +1,5 @@
-o_files/ADA: Modules/file_management/o_files/file_management.o Modules/math/o_files/math.o Modules/reminders/o_files/reminders.o Modules/schedule/o_files/schedule.o Modules/security/o_files/security.o Modules/time/o_files/time.o o_files/main.o Modules/profiles/o_files/profiles.o Modules/speech_documentation/o_files/speech_documentation.o Modules/neural_network/o_files/neural_network.o o_files/mainLib.so
-	g++ -std=c++11 -fPIC Modules/file_management/o_files/file_management.o Modules/math/o_files/math.o Modules/reminders/o_files/reminders.o Modules/schedule/o_files/schedule.o Modules/security/o_files/security.o Modules/time/o_files/time.o o_files/main.o Modules/profiles/o_files/profiles.o Modules/speech_documentation/o_files/speech_documentation.o Modules/neural_network/o_files/neural_network.o  -o o_files/ADA	
+o_files/AVA: Modules/file_management/o_files/file_management.o Modules/math/o_files/math.o Modules/reminders/o_files/reminders.o Modules/schedule/o_files/schedule.o Modules/security/o_files/security.o Modules/time/o_files/time.o o_files/main.o Modules/profiles/o_files/profiles.o Modules/speech_documentation/o_files/speech_documentation.o Modules/neural_network/o_files/neural_network.o o_files/mainLib.so
+	g++ -std=c++11 -fPIC Modules/file_management/o_files/file_management.o Modules/math/o_files/math.o Modules/reminders/o_files/reminders.o Modules/schedule/o_files/schedule.o Modules/security/o_files/security.o Modules/time/o_files/time.o o_files/main.o Modules/profiles/o_files/profiles.o Modules/speech_documentation/o_files/speech_documentation.o Modules/neural_network/o_files/neural_network.o  -o o_files/AVA	
 
 o_files/mainLib.so: Modules/file_management/o_files/file_management.o Modules/math/o_files/math.o Modules/reminders/o_files/reminders.o Modules/schedule/o_files/schedule.o Modules/security/o_files/security.o Modules/time/o_files/time.o o_files/main.o Modules/profiles/o_files/profiles.o Modules/speech_documentation/o_files/speech_documentation.o Modules/neural_network/o_files/neural_network.o
 	g++ -std=c++11 -shared -Wl,-soname,o_files/mainLib.so -o o_files/mainLib.so Modules/file_management/o_files/file_management.o Modules/math/o_files/math.o Modules/reminders/o_files/reminders.o Modules/schedule/o_files/schedule.o Modules/security/o_files/security.o Modules/time/o_files/time.o o_files/main.o Modules/profiles/o_files/profiles.o Modules/speech_documentation/o_files/speech_documentation.o Modules/neural_network/o_files/neural_network.o
@@ -49,4 +49,4 @@ Modules/neural_network/o_files/neural_network.o: Modules/neural_network/neural_n
 	g++ -std=c++11 -c -fPIC Modules/neural_network/neural_network.cpp -o Modules/neural_network/o_files/neural_network.o
 
 clean:
-	rm *.o ADA
+	rm *.o AVA

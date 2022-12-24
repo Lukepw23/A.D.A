@@ -212,7 +212,7 @@ string Time::year() { // COMPLETED
     return get_ctime().substr(20,4);
 }
 
-/* -------------------------------- ADA gets -------------------------------- */
+/* -------------------------------- AVA gets -------------------------------- */
 
 string Time::get_day_of_week() { // COMPLETED
     return "it is " + day_of_week();
