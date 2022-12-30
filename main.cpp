@@ -189,7 +189,7 @@ string simplify_get_current_profile(string input) { // COMPLETED
 /* -------------------------------------------------------------------------- */
 
 
-int get_response(int number) {// IN PROGRESS
+int get_response(int number) {
 
     vector<string> tagSentence = get_tag_sentence(number);
 
